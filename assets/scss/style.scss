@@ -1,0 +1,2913 @@
+$fs1:60px;
+$fs2:40px;
+$fs3:35px;
+
+$color-1:#fff;
+$color-2:#B5987B;
+$color-3:#8B8B8B;
+$color-4:#3C3C3C;
+$color-5:#181818;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: $color-3;
+
+    background-color: #D5D5D5;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #865A3E;
+}
+
+// Container
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+// Heading
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $color-5;
+
+    .heading-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+        width: 100%;
+        padding: 105px 100px;
+
+        .heading-title {
+            text-align: center;
+            font-size: 100px;
+            font-weight: 400;
+            color: $color-2;
+            letter-spacing: 0.3em;
+        }
+
+        .heading-subtitle {
+            text-align: center;
+            font-size: $fs2;
+            font-weight: 400;
+            color: $color-1;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+// About
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+    max-width: 1600px;
+
+    .about-title {
+        font-size: $fs1;
+        font-weight: 400;
+        color: $color-2;
+        letter-spacing: 0.2em;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 5px;
+            margin: 25px 0;
+            background-color: $color-2;
+        }
+    }
+
+    .about-text {
+        font-size: $fs2;
+        font-weight: 400;
+        color: $color-3;
+        letter-spacing: 0.03em;
+        line-height: 150%;
+    }
+}
+
+// Benefits-1
+
+.benefits {
+    width: 100%;
+    max-width: 1600px;
+    margin-top: 100px;
+
+    .benefits-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        .box-1 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+    
+            .benefits-title {
+                font-size: $fs1;
+                font-weight: 400;
+                color: $color-2;
+                letter-spacing: 0.2em;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    margin: 25px 0;
+                    background-color: $color-2;
+                }
+            }
+
+            .box-inner {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                width: 100%;
+                margin-top: 75px;
+
+                .box-string {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding-right: 30px;
+
+                    .box-title {
+                        font-size: $fs2;
+                        font-weight: 500;
+                        color: $color-2;
+                        letter-spacing: 0.03em;
+                    }
+    
+                    .box-text {
+                        font-size: $fs3;
+                        font-weight: 400;
+                        color: $color-3;
+                        letter-spacing: 0.04em;
+                    }
+                }
+            }
+
+
+            
+        }
+    
+        .box-2 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+    
+            .benefits-title {
+                font-size: $fs1;
+                font-weight: 400;
+                color: $color-2;
+                letter-spacing: 0.2em;
+
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    margin: 25px 0;
+                    background-color: $color-2;
+                }
+            }
+
+            .box-inner {
+                display: flex;
+                flex-direction: column;
+                gap: 70px;
+                width: 100%;
+                margin-top: 75px;
+                border-left: 5px solid $color-2;
+
+                .box-string {
+                    display: flex;
+                    align-items: center;
+                    gap: 35px;
+                    padding-right: 30px;
+                    margin-left: 65px;
+
+                    .box-element {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    .box-text {
+                        font-size: $fs2;
+                        font-weight: 400;
+                        color: $color-3;
+                        letter-spacing: 0.02em;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// Benefits-2
+
+.benefits-2 {
+    width: 100%;
+    max-width: 1600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .benefits-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        .box-1 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+    
+            .benefits-title {
+                font-size: $fs1;
+                font-weight: 400;
+                color: $color-2;
+                letter-spacing: 0.2em;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    margin: 25px 0;
+                    background-color: $color-2;
+                }
+            }
+
+            .box-inner-2 {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                width: 100%;
+                margin-top: 75px;
+
+                .box-string {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding-right: 30px;
+
+                    .box-title {
+                        font-size: $fs2;
+                        font-weight: 500;
+                        color: $color-2;
+                        letter-spacing: 0.03em;
+                    }
+    
+                    .box-text {
+                        font-size: $fs3;
+                        font-weight: 400;
+                        color: $color-3;
+                        letter-spacing: 0.04em;
+                    }
+                }
+            }
+
+
+            
+        }
+    
+        .box-2 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+    
+            .benefits-title {
+                font-size: $fs1;
+                font-weight: 400;
+                color: $color-2;
+                letter-spacing: 0.2em;
+
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    margin: 25px 0;
+                    background-color: $color-2;
+                }
+            }
+
+            .box-inner-2 {
+                display: flex;
+                flex-direction: column;
+                gap: 70px;
+                width: 100%;
+                margin-top: 75px;
+                border-left: 5px solid $color-2;
+
+                .box-string-2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-left: 65px;
+                    max-width: 0;
+
+                    .box-title {
+                        font-size: $fs3;
+                        font-weight: 400;
+                        color: $color-4;
+                        letter-spacing: 0.04em;
+                    }
+
+                    .box-link {
+                        font-size: $fs3;
+                        font-weight: 400;
+                        color: $color-3;
+                        letter-spacing: 0.04em;
+                        text-decoration: none;
+                    }
+
+                    .box-text {
+                        cursor: pointer;
+                        font-size: $fs3;
+                        font-weight: 400;
+                        color: $color-3;
+                        letter-spacing: 0.04em;
+                        text-decoration: none;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// Media
+
+@media (max-width: 1600px) {
+
+    // Container
+
+    .container {
+        padding: 0 (100px - (100px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (105px - (105px * (10px / 100px))) 100px;
+            gap: 45px - (45px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 100px - (100px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 40px - (40px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 150px - (150px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 60px - (60px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 40px - (40px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 100px - (100px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 60px - (60px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 50px - (50px * (10px / 100px));
+                    margin-top: 75px - (75px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 40px - (40px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 35px - (35px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 60px - (60px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 70px - (70px * (10px / 100px));
+                    margin-top: 75px - (75px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 65px - (65px * (10px / 100px));
+
+                        .box-element {
+                            width: 25px - (25px * (10px / 100px));
+                            height: 25px - (25px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 40px - (40px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 100px - (100px * (10px / 100px));
+        margin-bottom: 100px - (100px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 60px - (60px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 50px - (50px * (10px / 100px));
+                    margin-top: 75px - (75px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 40px - (40px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 35px - (35px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 60px - (60px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 70px - (70px * (10px / 100px));
+                    margin-top: 75px - (75px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 65px - (65px * (10px / 100px));
+
+                        .box-title {
+                            // f3
+                            font-size: 35px - (35px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 35px - (35px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 35px - (35px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1400px) {
+
+    // Container
+
+    .container {
+        padding: 0 (90px - (90px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (94.5px - (94.5px * (10px / 100px))) 100px;
+            gap: 40px - (40px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 90px - (90px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 36px - (36px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 135px - (135px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 54px - (54px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 36px - (36px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 90px - (90px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 54px - (54px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 45px - (45px * (10px / 100px));
+                    margin-top: 67.5px - (67.5px * (10px / 100px));
+
+                    .box-string {
+
+                        .box-title {
+                            font-size: 36px - (36px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 31.5px - (31.5px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 54px - (54px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 63px - (63px * (10px / 100px));
+                    margin-top: 67.5px - (67.5px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 58px - (58px * (10px / 100px));
+
+                        .box-element {
+                            width: 22.5px - (22.5px * (10px / 100px));
+                            height: 22.5px - (22.5px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 36px - (36px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 90px - (90px * (10px / 100px));
+        margin-bottom: 90px - (90px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 54px - (54px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 45px - (45px * (10px / 100px));
+                    margin-top: 67.5px - (67.5px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 36px - (36px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 31.5px - (31.5px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 54px - (54px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 63px - (63px * (10px / 100px));
+                    margin-top: 67.5px - (67.5px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 58px - (58px * (10px / 100px));
+
+                        .box-title {
+                            // f3
+                            font-size: 31.5px - (31.5px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 31.5px - (31.5px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 31.5px - (31.5px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1300px) {
+
+    // Container
+
+    .container {
+        padding: 0 (80px - (80px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (85.05px - (85.05px * (10px / 100px))) 100px;
+            gap: 36px - (36px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 81px - (81px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 32.4px - (32.4px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 121.5px - (121.5px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 48.6px - (48.6px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 32.4px - (32.4px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 81px - (81px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 48.6px - (48.6px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 40.5px - (40.5px * (10px / 100px));
+                    margin-top: 60.75px - (60.75px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 32.4px - (32.4px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 28.35px - (28.35px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 48.6px - (48.6px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 56.7px - (56.7px * (10px / 100px));
+                    margin-top: 60.75px - (60.75px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 52px - (52px * (10px / 100px));
+
+                        .box-element {
+                            width: 20.25px - (20.25px * (10px / 100px));
+                            height: 20.25px - (20.25px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 32.4px - (32.4px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 81px - (81px * (10px / 100px));
+        margin-bottom: 81px - (81px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 48.6px - (48.6px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 40.5px - (40.5px * (10px / 100px));
+                    margin-top: 60.75px - (60.75px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 32.4px - (32.4px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 28.35px - (28.35px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 48.6px - (48.6px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 56.7px - (56.7px * (10px / 100px));
+                    margin-top: 60.75px - (60.75px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 52px - (52px * (10px / 100px));
+
+                        .box-title {
+                            // f3
+                            font-size: 28.35px - (28.35px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 28.35px - (28.35px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 28.35px - (28.35px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    // Container
+
+    .container {
+        padding: 0 (72px - (72px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (76px - (76px * (10px / 100px))) 100px;
+            gap: 32px - (32px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 73px - (73px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 30px - (30px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 110px - (110px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 44px - (44px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 30px - (30px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 73px - (73px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 44px - (44px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 36px - (36px * (10px / 100px));
+                    margin-top: 55px - (55px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 30px - (30px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 25px - (25px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 44px - (44px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 51px - (51px * (10px / 100px));
+                    margin-top: 55px - (55px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 47px - (47px * (10px / 100px));
+
+                        .box-element {
+                            width: 18px - (18px * (10px / 100px));
+                            height: 18px - (18px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 30px - (30px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 73px - (73px * (10px / 100px));
+        margin-bottom: 73px - (73px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 44px - (44px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 36px - (36px * (10px / 100px));
+                    margin-top: 55px - (55px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 30px - (30px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 25px - (25px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 44px - (44px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 51px - (51px * (10px / 100px));
+                    margin-top: 55px - (55px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 47px - (47px * (10px / 100px));
+
+                        .box-title {
+                            // f3
+                            font-size: 25px - (25px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 25px - (25px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 25px - (25px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1100px) {
+
+    // Container
+
+    .container {
+        padding: 0 (65px - (65px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (68px - (68px * (10px / 100px))) 100px;
+            gap: 29px - (29px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 66px - (66px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 27px - (27px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 100px - (100px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 40px - (40px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 27px - (27px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 66px - (66px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 40px - (40px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 32px - (32px * (10px / 100px));
+                    margin-top: 50px - (50px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 27px - (27px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 40px - (40px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 46px - (46px * (10px / 100px));
+                    margin-top: 50px - (50px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 42px - (42px * (10px / 100px));
+
+                        .box-element {
+                            width: 16px - (16px * (10px / 100px));
+                            height: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 27px - (27px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 66px - (66px * (10px / 100px));
+        margin-bottom: 66px - (66px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 40px - (40px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 32px - (32px * (10px / 100px));
+                    margin-top: 50px - (50px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 27px - (27px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 40px - (40px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 46px - (46px * (10px / 100px));
+                    margin-top: 50px - (50px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 42px - (42px * (10px / 100px));
+                        
+                        .box-title {
+                            // f3
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+
+    // Container
+
+    .container {
+        padding: 0 (58px - (58px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (61px - (61px * (10px / 100px))) 100px;
+            gap: 26px - (26px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 60px - (60px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 24px - (24px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 90px - (90px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 36px - (36px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 24px - (24px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 36px - (36px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 29px - (29px * (10px / 100px));
+                    margin-top: 45px - (45px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 24px - (24px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 36px - (36px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 41px - (41px * (10px / 100px));
+                    margin-top: 45px - (45px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 38px - (38px * (10px / 100px));
+
+                        .box-element {
+                            width: 14px - (14px * (10px / 100px));
+                            height: 14px - (14px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 24px - (24px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 60px - (60px * (10px / 100px));
+        margin-bottom: 60px - (60px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 36px - (36px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 29px - (29px * (10px / 100px));
+                    margin-top: 45px - (45px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 24px - (24px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 36px - (36px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 41px - (41px * (10px / 100px));
+                    margin-top: 45px - (45px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 38px - (38px * (10px / 100px));
+
+                        .box-title {
+                            // f3
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 920px) {
+
+    // Container
+
+    .container {
+        padding: 0 (52px - (52px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (55px - (55px * (10px / 100px))) 100px;
+            gap: 23px - (23px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 54px - (54px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 22px - (22px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 81px - (81px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 32px - (32px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 22px - (22px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 54px - (54px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 32px - (32px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 26px - (26px * (10px / 100px));
+                    margin-top: 40px - (40px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 32px - (32px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 37px - (37px * (10px / 100px));
+                    margin-top: 40px - (40px * (10px / 100px));
+
+                    .box-string {
+                        margin-left: 34px - (34px * (10px / 100px));
+
+                        .box-element {
+                            width: 13px - (13px * (10px / 100px));
+                            height: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 54px - (54px * (10px / 100px));
+        margin-bottom: 54px - (54px * (10px / 100px));
+
+        .benefits-inner {
+            .box-1 {
+                .benefits-title {
+                    font-size: 32px - (32px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 26px - (26px * (10px / 100px));
+                    margin-top: 40px - (40px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 22px - (22px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 32px - (32px * (10px / 100px)); 
+                }
+
+                .box-inner-2 {
+                    gap: 37px - (37px * (10px / 100px));
+                    margin-top: 40px - (40px * (10px / 100px));
+
+                    .box-string-2 {
+                        margin-left: 34px - (34px * (10px / 100px));
+
+                        .box-title {
+                            // f3
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    // Container
+
+    .container {
+        padding: 0 (46px - (46px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (50px - (50px * (10px / 100px))) 100px;
+            gap: 21px - (21px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 48px - (48px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 20px - (20px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 73px - (73px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 29px - (29px * (10px / 100px));
+
+            &:after {
+                height: 3px;
+                margin: 20px 0;
+            }
+        }
+
+        .about-text {
+            font-size: 20px - (20px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 49px - (49px * (10px / 100px));
+
+        .benefits-inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 49px - (49px * (10px / 100px));
+            .box-1 {
+                width: 100%;
+
+                .benefits-title {
+                    font-size: 29px - (29px * (10px / 100px)); 
+
+                    &::after {
+                        height: 3px;
+                        margin: 20px 0;
+                    }
+                }
+
+                .box-inner {
+                    gap: 23px - (23px * (10px / 100px));
+                    margin-top: 0;
+
+                    .box-string {
+                        .box-title {
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                width: 100%;
+                .benefits-title {
+                    font-size: 29px - (29px * (10px / 100px)); 
+
+                    &::after {
+                        height: 3px;
+                        margin: 20px 0;
+                    }
+                }
+
+                .box-inner {
+                    gap: 33px - (33px * (10px / 100px));
+                    margin-top: 0;
+                    border-left: 0;
+
+                    .box-string {
+                        margin-left: 0;
+
+                        .box-element {
+                            width: 12px - (12px * (10px / 100px));
+                            height: 12px - (12px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 49px - (49px * (10px / 100px));
+        margin-bottom: 49px - (49px * (10px / 100px));
+
+        .benefits-inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 49px - (49px * (10px / 100px));
+
+            .box-1 {
+                width: 100%;
+
+                .benefits-title {
+                    font-size: 29px - (29px * (10px / 100px)); 
+
+                    &::after {
+                        height: 3px;
+                        margin: 20px 0;
+                    }
+                }
+
+                .box-inner-2 {
+                    gap: 23px - (23px * (10px / 100px));
+                    margin-top: 0;
+
+                    .box-string {
+                        .box-title {
+                            font-size: 20px - (20px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                width: 100%;
+
+                .benefits-title {
+                    font-size: 29px - (29px * (10px / 100px)); 
+
+                    &::after {
+                        height: 3px;
+                        margin: 20px 0;
+                    }
+                }
+
+                .box-inner-2 {
+                    gap: 33px - (33px * (10px / 100px));
+                    margin-top: 0;
+                    border-left: 0;
+
+                    .box-string-2 {
+                        margin-left: 0;
+
+                        .box-title {
+                            // f3
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    // Container
+
+    .container {
+        padding: 0 (41px - (41px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (45px - (45px * (10px / 100px))) 100px;
+            gap: 19px - (19px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 43px - (43px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 18px - (18px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 66px - (66px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 26px - (26px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 18px - (18px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 44px - (44px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 44px - (44px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 26px - (26px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 21px - (21px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 14px - (14px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 26px - (26px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 30px - (30px * (10px / 100px));
+
+                    .box-string {
+
+                        .box-element {
+                            width: 11px - (11px * (10px / 100px));
+                            height: 11px - (11px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 43px - (43px * (10px / 100px));
+        margin-bottom: 43px - (43px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 44px - (44px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 26px - (26px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 21px - (21px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 18px - (18px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 14px - (14px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 26px - (26px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 30px - (30px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 14px - (14px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 14px - (14px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 14px - (14px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 720px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (40px - (40px * (10px / 100px))) 100px;
+            gap: 17px - (17px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 39px - (39px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 16px - (16px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 670px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (36px - (36px * (10px / 100px))) 100px;
+            gap: 15px - (15px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 35px - (35px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 14px - (14px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 620px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (32px - (32px * (10px / 100px))) 100px;
+            gap: 14px - (14px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 32px - (32px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 13px - (13px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 590px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (29px - (29px * (10px / 100px))) 100px;
+            gap: 13px - (13px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 29px - (29px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 12px - (12px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 550px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (26px - (26px * (10px / 100px))) 100px;
+            gap: 12px - (12px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 26px - (26px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 11px - (11px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 520px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (23px - (23px * (10px / 100px))) 100px;
+            gap: 11px - (11px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 23px - (23px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 10px - (10px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    // Container
+
+    .container {
+        padding: 0 (37px - (37px * (10px / 100px)));
+    }
+    
+    // Heading
+
+    .heading {
+        .heading-inner {
+            padding: (23px - (23px * (10px / 100px))) 50px;
+            gap: 11px - (11px * (10px / 100px));
+
+            
+            .heading-title {
+                font-size: 23px - (23px * (10px / 100px));
+            }
+
+            .heading-subtitle {
+                // fs2
+                font-size: 10px - (10px * (10px / 100px));
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        margin-top: 60px - (60px * (10px / 100px));
+
+        .about-title {
+            // fs1
+            font-size: 23px - (23px * (10px / 100px));
+        }
+
+        .about-text {
+            font-size: 16px - (16px * (10px / 100px));
+        }
+    }
+
+    // Benefits-1
+
+    .benefits {
+        margin-top: 40px - (40px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+                }
+
+                .box-inner {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string {
+                        .box-element {
+                            width: 10px - (10px * (10px / 100px));
+                            height: 10px - (10px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Benefits-2
+
+    .benefits-2 {
+        margin-top: 39px - (39px * (10px / 100px));
+        margin-bottom: 39px - (39px * (10px / 100px));
+
+        .benefits-inner {
+            gap: 40px - (40px * (10px / 100px));
+
+            .box-1 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px)); 
+
+                }
+
+                .box-inner-2 {
+                    gap: 19px - (19px * (10px / 100px));
+
+                    .box-string {
+                        .box-title {
+                            font-size: 16px - (16px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            // fs3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+                .benefits-title {
+                    font-size: 23px - (23px * (10px / 100px));
+                }
+
+                .box-inner-2 {
+                    gap: 27px - (27px * (10px / 100px));
+
+                    .box-string-2 {
+                        .box-title {
+                            // f3
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-link {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+
+                        .box-text {
+                            font-size: 13px - (13px * (10px / 100px));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
